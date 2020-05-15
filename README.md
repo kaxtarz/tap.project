@@ -19,7 +19,7 @@
 ### Quick Overview
 
 ```sh
-git clone [repo url]
+git clone https://github.com/kaxtarz/tap.project.git
 cd to repo
 npm install
 npm start
