@@ -2,6 +2,8 @@
 
 **Visual Studio Code**: [VSC](https://code.visualstudio.com/download)
 
+**Git**: [VSC](https://git-scm.com/downloads)
+
 **Node Package Manager**:
 [NPM](https://nodejs.org/en/)
 
@@ -13,8 +15,9 @@
 ### Quick Overview
 
 ```sh
-cd [Your folder]
-npx create-react-app .
+git clone repo
+cd to repo
+npm install
 ```
 
 ## Available Scripts
