@@ -1,6 +1,10 @@
 # Setup/Install
 
 **Visual Studio Code**: [VSC](https://code.visualstudio.com/download)
+    
+    Plugins
+      - ES7 React/Redux/GraphQL/React-Native snippets
+      - Prettier - Code Formatter
 
 **Git Download**: [Git](https://git-scm.com/downloads)
 
