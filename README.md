@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Setup
+
+**Install** [VSC](https://code.visualstudio.com/download):
+\
+
+
+#### Windows OS:
+**We will use npm to install needed packages:**
+[install _current_ Node.js](https://nodejs.org/en/)
+  - NPM should come with NodeJS,verify with npm -v
+
+
 ## Available Scripts
 
 In the project directory, you can run:
