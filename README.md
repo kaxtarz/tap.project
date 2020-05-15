@@ -2,7 +2,7 @@
 
 **Visual Studio Code**: [VSC](https://code.visualstudio.com/download)
 
-**Git**: [VSC](https://git-scm.com/downloads)
+**Git Download**: [Git](https://git-scm.com/downloads)
 
 **Node Package Manager**:
 [NPM](https://nodejs.org/en/)
@@ -18,6 +18,7 @@
 git clone repo
 cd to repo
 npm install
+npm start
 ```
 
 ## Available Scripts
