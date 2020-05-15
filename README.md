@@ -1,4 +1,4 @@
-## Setup/Install
+# Setup/Install
 
 **Visual Studio Code**: [VSC](https://code.visualstudio.com/download)
 
