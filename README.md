@@ -15,7 +15,7 @@
 ### Quick Overview
 
 ```sh
-git clone repo
+git clone [repo url]
 cd to repo
 npm install
 npm start
