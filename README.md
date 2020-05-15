@@ -1,16 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Setup/Install
 
-Setup
-
-**Install** [VSC](https://code.visualstudio.com/download):
-\
-
-
-#### Windows OS:
-**We will use npm to install needed packages:**
-[install _current_ Node.js](https://nodejs.org/en/)
+**Visual Studio Code** [VSC](https://code.visualstudio.com/download)
+**Node Package Manager**
+[NPM](https://nodejs.org/en/)
   - NPM should come with NodeJS,verify with npm -v
+**React Developer Tools for Chrome** [RDT](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+ 
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Quick Overview
+
+```sh
+cd [Your folder]
+npx create-react-app .
+```
 
 ## Available Scripts
 
