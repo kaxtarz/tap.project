@@ -1,4 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Setup/Install
+
+**Visual Studio Code**: [VSC](https://code.visualstudio.com/download)
+    
+    Plugins
+      - ES7 React/Redux/GraphQL/React-Native snippets
+      - Prettier - Code Formatter
+
+**Git Download**: [Git](https://git-scm.com/downloads)
+
+**Node Package Manager**:
+[NPM](https://nodejs.org/en/)
+
+**React Developer Tools for Chrome**: [RDT](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+ 
+ 
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Quick Overview
+
+```sh
+git clone https://github.com/kaxtarz/tap.project.git
+cd to repo
+npm install
+npm start
+```
 
 ## Available Scripts
 
