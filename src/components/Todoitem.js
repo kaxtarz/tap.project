@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 
+/*
+This is where the items you add will populate
+*/
+
 export class Todoitem extends Component {
   getStyle = () => {
     return {

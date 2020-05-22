@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+/*
+This is where we update the search and submit functionality
+*/
 export class AddTodo extends Component {
   state = {
     title: '',
@@ -19,8 +21,8 @@ export class AddTodo extends Component {
         <input
           type='text'
           name='title'
-          style={{ flex: '10', padding: '5px' }}
-          placeholder='Add Todo ...'
+          style={{ flex: '15', padding: '5px' }}
+          placeholder='Search ...'
           value={this.state.title}
           onChange={this.onChange}
         />

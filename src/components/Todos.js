@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import TodoItem from './Todoitem';
-
+/*
+This is how the mark complete functionality works
+*/
 class Todos extends React.Component {
   render() {
     console.log(this.props.todos);
@@ -21,3 +23,4 @@ Todos.propTypes = {
   todos: PropTypes.array.isRequired,
 };
 export default Todos;
+

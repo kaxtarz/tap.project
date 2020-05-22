@@ -4,27 +4,35 @@ import React from 'react';
 function Header() {
   return (
     <header style={headerStyle}>
-      <h1>TodoList</h1>
+      <h1>tap|QA</h1>
       <Link style={linkStyle} to='/'>
-        Home
+        Roster
       </Link>{' '}
       |{' '}
       <Link style={linkStyle} to='/about'>
-        About
+        Clients
+      </Link>{' '}
+      |{' '}
+      <Link style={linkStyle} to='/about'>
+        Consultants
+      </Link>{' '}
+      |{' '}
+      <Link style={linkStyle} to='/about'>
+        Skillsets
       </Link>
     </header>
   );
 }
 
 const headerStyle = {
-  background: '#333',
-  color: '#fff',
-  textAlign: 'center',
-  padding: '10px',
+  background: '#5FDC05',
+  color: '#FFFFFF',
+  textAlign: 'left',
+  padding: '9px',
 };
 
 const linkStyle = {
-  color: '#fff',
+  color: '#FFFFFF',
   textDecoration: 'none',
 };
 

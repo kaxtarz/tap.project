@@ -5,10 +5,14 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 
 import About from './components/pages/About';
 import AddTodo from './components/AddTodo';
+import ClientTable from './components/ClientTable'
 import Header from './components/layout/Header';
 import Todos from './components/Todos';
-import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
+
+/*
+This is where everything gets put to render + where you can hard code things
+*/
 
 class App extends Component {
   state = {
@@ -16,18 +20,28 @@ class App extends Component {
     todos: [
       {
         id: uuidv4(),
-        title: 'Take out the trash',
+        title: 'NBC Studios',
+        completed: false,
+      },
+      {
+        id: uuidv4(),
+        title: 'SnapAV',
+        completed: false,
+      },
+      {
+        id: uuidv4(),
+        title: 'On-Deck',
         completed: false,
       },
     ],
   };
 
   //api request to jsonplaceholder to display mock data
-  componentDidMount() {
-    axios
-      .get('https://jsonplaceholder.typicode.com/todos?_limit=10')
-      .then((res) => this.setState({ todos: res.data }));
-  }
+  // componentDidMount() {
+  //   axios
+  //     .get('https://jsonplaceholder.typicode.com/todos?_limit=10')
+  //     .then((res) => this.setState({ todos: res.data }));
+  // }
 
   //Toggole Complete
   markComplete = (id) => {
