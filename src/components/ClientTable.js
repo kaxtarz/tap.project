@@ -5,7 +5,7 @@ React Dynamic Table
 https://codepen.io/Basit600/pen/JzeZxo?editors=0010
 */
 
-class Table extends React.Component {
+class ClientTable extends React.Component {
   render() {
     // super(props);
     this.state = {
