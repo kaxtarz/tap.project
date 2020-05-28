@@ -62,6 +62,17 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Clone Project
+
+- In VSCode, open the View menu.
+- Click on `Command Palette...`
+- Type in `Git: Clone`
+- Paste the URL into the Command Palette.
+- A prompt will open up for you to select the directory where to clone the project.
+- After the download completes, you may open the project inside of VSCode.
+- You may continue to use `Source Control` in the left hand menu of VSCode to manage the version on your machine.
+- Reminder: create a new branch off of the master branch to avoid any changes directly to the master branch.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
