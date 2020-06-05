@@ -9,15 +9,21 @@ import ClientTable from './components/ClientTable'
 import Header from './components/layout/Header';
 import Todos from './components/Todos';
 import { v4 as uuidv4 } from 'uuid';
+import axios from 'axios';
 
 /*
 This is where everything gets put to render + where you can hard code things
 */
 
-class App extends Component {
-  state = {
-    //here we can hard code to display
-    todos: [
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+
+      data: {},
+      
+      todos: [
       {
         id: uuidv4(),
         title: 'NBC Studios',
@@ -34,16 +40,17 @@ class App extends Component {
         completed: false,
       },
     ],
-  };
-
+    };
+  }
+  
   //api request to jsonplaceholder to display mock data
-  // componentDidMount() {
-  //   axios
-  //     .get('https://jsonplaceholder.typicode.com/todos?_limit=10')
-  //     .then((res) => this.setState({ todos: res.data }));
-  // }
+  componentDidMount() {
+    axios
+      .get('https://my-json-server.typicode.com/ConradT101/tapdb/db')
+      .then((res) => this.setState({ data: res.data }));
+  }
 
-  //Toggole Complete
+  //Toggle Complete
   markComplete = (id) => {
     this.setState({
       todos: this.state.todos.map((todo) => {
@@ -73,6 +80,7 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state.data);
     return (
       <Router>
         <div className='App'>
@@ -93,11 +101,10 @@ class App extends Component {
               )}
             />
             <Route path='/about' component={About} />
+            <Route path='/client' render={ (props) => <ClientTable {...props}  clients={this.state.data.Client} />}/>
           </div>
         </div>
       </Router>
     );
   }
 }
-
-export default App;
