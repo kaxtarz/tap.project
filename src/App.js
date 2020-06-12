@@ -15,7 +15,7 @@ import { v4 as uuidv4 } from 'uuid';
 This is where everything gets put to render + where you can hard code things
 */
 
-class App extends React.Component {
+class App extends Component {
   state = {
     todos: [
       // {
