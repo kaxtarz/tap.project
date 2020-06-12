@@ -36,7 +36,6 @@ class App extends Component {
     ],
   };
 
-  //making changes
   //api request to jsonplaceholder to display mock data
   // componentDidMount() {
   //   axios
