@@ -9,11 +9,11 @@ function Header() {
         Roster
       </Link>{' '}
       |{' '}
-      <Link style={linkStyle} to='/about'>
+      <Link style={linkStyle} to='/clients'>
         Clients
       </Link>{' '}
       |{' '}
-      <Link style={linkStyle} to='/about'>
+      <Link style={linkStyle} to='/consultants'>
         Consultants
       </Link>{' '}
       |{' '}

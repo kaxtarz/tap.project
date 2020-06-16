@@ -6,13 +6,13 @@ https://codepen.io/Basit600/pen/JzeZxo?editors=0010
 */
 
 class ClientTable extends React.Component {
-  render() {
-    // super(props);
+   constructor(props) {
+      super(props)
     this.state = {
       students: [
         {
           id: 1,
-          consultant: 'Mark',
+          "consultant": "Mark",
           role: 1,
           status: 'Active',
           skillsets: 'Java, Jenkins, .NET',
@@ -37,15 +37,16 @@ class ClientTable extends React.Component {
           role: 1,
           status: 'Active',
           skillsets: 'Java, Jenkins, .NET',
-        },
-      ],
-    };
+        }
+      ]
+    }
+
   }
 
   renderTableHeader() {
-    let header = Object.keys(this.state.students[0]);
+    let header = Object.keys(this.state.students[0])
     return header.map((key, index) => {
-      return <th key={index}>{key.toUpperCase()}</th>;
+      return <th key={index}>{key.toUpperCase() }</th>;
     });
   }
 
@@ -60,8 +61,8 @@ class ClientTable extends React.Component {
           <td>{status}</td>
           <td>{skillsets}</td>
         </tr>
-      );
-    });
+      )
+    })
   }
 
   render() {

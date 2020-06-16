@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 
 import About from './components/pages/About';
+import ConsultantTable from './components/pages/ConsultantTable';
 import AddTodo from './components/AddTodo';
 import ClientTable from './components/ClientTable'
 import Header from './components/layout/Header';
@@ -13,6 +14,7 @@ import { v4 as uuidv4 } from 'uuid';
 /*
 This is where everything gets put to render + where you can hard code things
 */
+
 
 class App extends Component {
   state = {
@@ -93,6 +95,8 @@ class App extends Component {
               )}
             />
             <Route path='/about' component={About} />
+            <Route path='/consultants' component={ConsultantTable} />
+            <Route path='/clients' component={ClientTable} />
           </div>
         </div>
       </Router>
