@@ -9,16 +9,20 @@ function Header() {
         Roster
       </Link>{' '}
       |{' '}
-      <Link style={linkStyle} to='/client'>
-        Clients
+      <Link style={linkStyle} to='/clients'>
+        Client List
       </Link>{' '}
       |{' '}
-      <Link style={linkStyle} to='/about'>
+      <Link style={linkStyle} to='/consultants'>
         Consultants
       </Link>{' '}
       |{' '}
+      <Link style={linkStyle} to='/skills'>
+        Skills
+      </Link>{' '}
+      |{' '}
       <Link style={linkStyle} to='/about'>
-        Skillsets
+        About
       </Link>
     </header>
   );
