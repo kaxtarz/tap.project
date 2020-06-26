@@ -9,12 +9,10 @@ constructor(props) {
         this.state = {
           consultants: []
         }
-
-
 }
 
   componentDidMount() {
-    axios.get(`http://localhost:8080/consultantarray`)
+    axios.get(`http://localhost:8080/consultant`)
       .then(res => {
         const consultants = res.data;
         this.setState({ consultants });
@@ -30,12 +28,6 @@ constructor(props) {
    <th>Status</th>
 </>
    );
-
-
-
-
-
-
   }
 
     renderTableData() {
@@ -56,7 +48,6 @@ constructor(props) {
     render() {
       return (
         <div>
-          <h1 id='title'>tap|QA</h1>
           <h3 id='title'>Consultant Roster</h3>
           <table id='consultants'>
             <tbody>
@@ -67,7 +58,6 @@ constructor(props) {
         </div>
       );
     }
-
 
 }
 export default  ConsultantTable;

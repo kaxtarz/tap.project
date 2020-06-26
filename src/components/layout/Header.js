@@ -10,15 +10,19 @@ function Header() {
       </Link>{' '}
       |{' '}
       <Link style={linkStyle} to='/clients'>
-        Clients
+        Client List
       </Link>{' '}
       |{' '}
       <Link style={linkStyle} to='/consultants'>
         Consultants
       </Link>{' '}
       |{' '}
+      <Link style={linkStyle} to='/skills'>
+        Skills
+      </Link>{' '}
+      |{' '}
       <Link style={linkStyle} to='/about'>
-        Skillsets
+        About
       </Link>
     </header>
   );

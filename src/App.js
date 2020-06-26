@@ -2,23 +2,18 @@ import './App.css';
 
 import React, { Component } from 'react';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
-
 import About from './components/pages/About';
 import ConsultantTable from './components/pages/ConsultantTable';
 import AddTodo from './components/AddTodo';
-import ClientTable from './components/ClientTable'
+import ClientTable from './components/pages/ClientTable'
 import Header from './components/layout/Header';
 import Todos from './components/Todos';
 import { v4 as uuidv4 } from 'uuid';
-
-/*
-This is where everything gets put to render + where you can hard code things
-*/
-
+import SkillTable from './components/pages/SkillTable';
 
 class App extends Component {
   state = {
-    //here we can hard code to display
+
     todos: [
       {
         id: uuidv4(),
@@ -37,13 +32,6 @@ class App extends Component {
       },
     ],
   };
-
-  //api request to jsonplaceholder to display mock data
-  // componentDidMount() {
-  //   axios
-  //     .get('https://jsonplaceholder.typicode.com/todos?_limit=10')
-  //     .then((res) => this.setState({ todos: res.data }));
-  // }
 
   //Toggole Complete
   markComplete = (id) => {
@@ -97,6 +85,7 @@ class App extends Component {
             <Route path='/about' component={About} />
             <Route path='/consultants' component={ConsultantTable} />
             <Route path='/clients' component={ClientTable} />
+            <Route path='/skills' component={SkillTable} />
           </div>
         </div>
       </Router>
