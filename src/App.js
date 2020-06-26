@@ -5,31 +5,31 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 import About from './components/pages/About';
 import ConsultantTable from './components/pages/ConsultantTable';
 import AddTodo from './components/AddTodo';
-import ClientTable from './components/pages/ClientTable'
+import ClientTable from './components/ClientTable';
 import Header from './components/layout/Header';
 import Todos from './components/Todos';
+import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import SkillTable from './components/pages/SkillTable';
 
 class App extends Component {
   state = {
-
     todos: [
-      {
-        id: uuidv4(),
-        title: 'NBC Studios',
-        completed: false,
-      },
-      {
-        id: uuidv4(),
-        title: 'SnapAV',
-        completed: false,
-      },
-      {
-        id: uuidv4(),
-        title: 'On-Deck',
-        completed: false,
-      },
+      // {
+      //   id: uuidv4(),
+      //   title: 'NBC Studios',
+      //   completed: false,
+      // },
+      // {
+      //   id: uuidv4(),
+      //   title: 'SnapAV',
+      //   completed: false,
+      // },
+      // {
+      //   id: uuidv4(),
+      //   title: 'On-Deck',
+      //   completed: false,
+      // },
     ],
   };
 
@@ -63,6 +63,7 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state.data);
     return (
       <Router>
         <div className='App'>
