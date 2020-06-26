@@ -6,7 +6,7 @@ function Header() {
     <header style={headerStyle}>
       <h1>tap|QA</h1>
       <Link style={linkStyle} to='/'>
-        Roster
+        Example: Todo List
       </Link>{' '}
       |{' '}
       <Link style={linkStyle} to='/clients'>
